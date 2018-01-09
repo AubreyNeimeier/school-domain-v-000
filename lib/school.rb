@@ -9,7 +9,7 @@ class School
   end
 
   def add_student(student_name, student_grade)
-    if @roster.keys.include?(student_grade)
+    if @roster.keys.include?(student_grade) #we can check that the grade is in the hash OR (avi) checks if value of hash at grade is nil or not
       @roster[student_grade] << student_name
     else
       @roster[student_grade] = []
